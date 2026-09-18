@@ -42,7 +42,7 @@ body {
 
 /* ----- BOTTOM SECTION (flex container, row direction) ----- */
 .bottom-section {
-  flex: 1;                /* equal share with top section */
+  flex: 3;                /* equal share with top section */
   min-height: 120px;
   display: flex;          /* makes children sit side-by-side */
   background: #1e2a36;
