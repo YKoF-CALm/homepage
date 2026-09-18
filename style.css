@@ -17,7 +17,7 @@ body {
 .top-section {
   flex: 1;                /* takes remaining height */
   min-height: 120px;      /* ensures it never collapses */
-  background: #2d3e50;
+  background: #45a366;
   color: #e0e0e0;
   display: flex;
   flex-direction: column;
@@ -61,12 +61,12 @@ body {
 }
 
 .bottom-left {
-  background: #1f3a4b;
+  background: #0038ff;
   border-right: 3px solid #ffb74d;  /* visual divider between columns */
 }
 
 .bottom-right {
-  background: #1b2f3c;
+  background: #00a9ff;
 }
 
 /* typography inside bottom panels */
