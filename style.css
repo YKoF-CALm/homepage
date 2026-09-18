@@ -10,7 +10,6 @@ body {
   height: 100vh;          /* full viewport height */
   display: flex;
   flex-direction: column;
-  background: #1e1e2f;    /* subtle dark background for contrast */
 }
 
 /* ----- TOP SECTION (flexible height) ----- */
@@ -45,7 +44,6 @@ body {
   flex: 3;                /* equal share with top section */
   min-height: 120px;
   display: flex;          /* makes children sit side-by-side */
-  background: #1e2a36;
 }
 
 /* ----- LEFT & RIGHT PANELS (vertical split) ----- */
