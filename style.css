@@ -14,99 +14,120 @@ body {
 
 /* ----- TOP SECTION (flexible height) ----- */
 .top-section {
-  flex: 1;                /* takes remaining height */
-  min-height: 120px;      /* ensures it never collapses */
-  background: #45a366;
-  color: #e0e0e0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 4px solid #ffb74d;
-  padding: 1.5rem;
-  text-align: center;
+    flex: 1;                /* takes remaining height */
+    min-height: 120px;      /* ensures it never collapses */
+    background: #45a366;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid #ffb74d;
+    padding: 1.5rem;
+    text-align: center;
 }
 
 .top-section h1 {
-  font-size: 2rem;
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin-bottom: 0.5rem;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
 }
 
 .top-section p {
-  color: #b0c4de;
-  font-size: 1.1rem;
+    color: #b0c4de;
+    text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    font-size: 1.1rem;
 }
 
 /* ----- BOTTOM SECTION (flex container, row direction) ----- */
 .bottom-section {
-  flex: 3;                /* equal share with top section */
-  min-height: 120px;
-  display: flex;          /* makes children sit side-by-side */
+    flex: 3;                /* equal share with top section */
+    min-height: 120px;
+    display: flex;          /* makes children sit side-by-side */
 }
 
 /* ----- LEFT & RIGHT PANELS (vertical split) ----- */
 .bottom-left,
 .bottom-right {
-  flex: 1;                /* each takes half of bottom width */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1.5rem;
-  text-align: center;
+    flex: 1;                /* each takes half of bottom width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    text-align: center;
 }
 
 .bottom-left {
-  background: #0038ff;
-  border-right: 3px solid #ffb74d;  /* visual divider between columns */
+    background: #0038ff;
+    border-right: 3px solid #ffb74d;  /* visual divider between columns */
 }
 
 .bottom-right {
-  background: #00a9ff;
+    background: #00a9ff;
 }
 
 /* typography inside bottom panels */
 .bottom-left h2,
 .bottom-right h2 {
-  font-size: 1.6rem;
-  font-weight: 500;
-  margin-bottom: 0.75rem;
-  color: #f0f0f0;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+    color: #f0f0f0;
+    text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 .bottom-left p,
 .bottom-right p {
-  color: #b0c4de;
-  max-width: 280px;
-  line-height: 1.5;
+    color: #b0c4de;
+    text-shadow: 
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    max-width: 280px;
+    line-height: 1.5;
 }
 
 /* decorative icons / markers */
 .icon {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  opacity: 0.9;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
 }
 
 /* small screen adjustments */
 @media (max-width: 600px) {
-  .bottom-section {
-    flex-direction: column;   /* stack vertically on very small screens */
-  }
+    .bottom-section {
+        flex-direction: column;   /* stack vertically on very small screens */
+    }
 
-  .bottom-left {
-    border-right: none;
-    border-bottom: 3px solid #ffb74d;
-  }
+    .bottom-left {
+        border-right: none;
+        border-bottom: 3px solid #ffb74d;
+    }
 
-  .top-section h1 {
-    font-size: 1.6rem;
-  }
+    .top-section h1 {
+        font-size: 1.6rem;
+    }
 
-  .bottom-left h2,
-  .bottom-right h2 {
-    font-size: 1.3rem;
-  }
+    .bottom-left h2,
+    .bottom-right h2 {
+        font-size: 1.3rem;
+    }
 }
