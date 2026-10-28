@@ -1,116 +1,116 @@
 /* reset & base */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background: #1e1e2f;
-  color: #e0e0e0;
+    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #1e1e2f;
+    color: #e0e0e0;
 }
 
 /* ----- TOP SECTION ----- */
 .top-section {
-  flex: 0 0 auto;
-  padding: 2rem 1.5rem;
-  background: #2d3e50;
-  border-bottom: 4px solid #ffb74d;
-  text-align: center;
+    flex: 0 0 auto;
+    padding: 2rem 1.5rem;
+    background: #2d3e50;
+    border-bottom: 4px solid #ffb74d;
+    text-align: center;
 }
 
 .top-section h1 {
-  font-size: 2rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 
 .top-section p {
-  color: #b0c4de;
+    color: #b0c4de;
 }
 
 /* ----- BOTTOM SECTION ----- */
 .bottom-section {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  padding: 2rem 1.5rem;
-  background: #1e2a36;
-  overflow-y: auto;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    background: #1e2a36;
+    overflow-y: auto;
 }
 
 .tabs-container {
-  width: 100%;
-  max-width: 760px;
+    width: 100%;
+    max-width: 760px;
 }
 
 /* ----- TAB BUTTONS ----- */
 .tab-list {
-  display: flex;
-  gap: 0.25rem;
-  border-bottom: 2px solid #2d3e50;
-  margin-bottom: 1.5rem;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 0.25rem;
+    border-bottom: 2px solid #2d3e50;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .tab-button {
-  background: transparent;
-  border: none;
-  color: #b0c4de;
-  font-size: 1rem;
-  font-family: inherit;
-  padding: 0.75rem 1.25rem;
-  cursor: pointer;
-  border-bottom: 3px solid transparent;
-  margin-bottom: -2px;          /* sit on top of the container border */
-  transition: color 0.15s, border-color 0.15s;
+    background: transparent;
+    border: none;
+    color: #b0c4de;
+    font-size: 1rem;
+    font-family: inherit;
+    padding: 0.75rem 1.25rem;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    margin-bottom: -2px;          /* sit on top of the container border */
+    transition: color 0.15s, border-color 0.15s;
 }
 
 .tab-button:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .tab-button.active {
-  color: #ffb74d;
-  border-bottom-color: #ffb74d;
-  font-weight: 600;
+    color: #ffb74d;
+    border-bottom-color: #ffb74d;
+    font-weight: 600;
 }
 
 .tab-button:focus-visible {
-  outline: 2px solid #ffb74d;
-  outline-offset: 2px;
+    outline: 2px solid #ffb74d;
+    outline-offset: 2px;
 }
 
 /* ----- TAB PANELS ----- */
 .tab-panel {
-  background: #1f3a4b;
-  padding: 1.75rem;
-  border-radius: 8px;
-  line-height: 1.6;
+    background: #1f3a4b;
+    padding: 1.75rem;
+    border-radius: 8px;
+    line-height: 1.6;
 }
 
 /* hide panels that don't have the .active class */
 .tab-panel:not(.active) {
-  display: none;
+    display: none;
 }
 
 .tab-panel h2 {
-  font-size: 1.4rem;
-  margin-bottom: 0.75rem;
-  color: #f0f0f0;
+    font-size: 1.4rem;
+    margin-bottom: 0.75rem;
+    color: #f0f0f0;
 }
 
 .tab-panel p {
-  color: #b0c4de;
+    color: #b0c4de;
 }
 
 /* small screen tweak */
 @media (max-width: 600px) {
-  .top-section h1 { font-size: 1.5rem; }
-  .tab-button { padding: 0.6rem 0.9rem; font-size: 0.9rem; }
-  .tab-panel { padding: 1.25rem; }
+    .top-section h1 { font-size: 1.5rem; }
+    .tab-button { padding: 0.6rem 0.9rem; font-size: 0.9rem; }
+    .tab-panel { padding: 1.25rem; }
 }
