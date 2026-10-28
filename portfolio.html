@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabbed Sections</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <header class="top-section">
+    <h1>⚡ Tabbed Page</h1>
+    <p>Click a tab below to switch sections</p>
+  </header>
+
+  <div class="bottom-section">
+    <div class="tabs-container">
+
+      <!-- TAB BUTTONS -->
+      <div class="tab-list" role="tablist" aria-label="Content sections">
+        <button class="tab-button active" role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1">Home</button>
+        <button class="tab-button" role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2">About</button>
+        <button class="tab-button" role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3">Contact</button>
+      </div>
+
+      <!-- TAB PANELS -->
+      <div class="tab-panel active" role="tabpanel" id="panel-1" aria-labelledby="tab-1">
+        <h2>🏠 Home</h2>
+        <p>Welcome to the home tab. Only this panel is visible when the "Home" tab is active.</p>
+      </div>
+
+      <div class="tab-panel" role="tabpanel" id="panel-2" aria-labelledby="tab-2" hidden>
+        <h2>ℹ️ About</h2>
+        <p>This is the about tab. The tab system hides all panels except the one matching the selected tab.</p>
+      </div>
+
+      <div class="tab-panel" role="tabpanel" id="panel-3" aria-labelledby="tab-3" hidden>
+        <h2>✉️ Contact</h2>
+        <p>This is the contact tab. Try clicking through the tabs above.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="portfolio.js" defer></script>
+
+</body>
+</html>
