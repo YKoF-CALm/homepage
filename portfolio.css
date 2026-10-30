@@ -140,7 +140,7 @@ a:visited {
 .social-icon {
     fill: currentColor;
     stroke: #ffffff;           /* outline color */
-    stroke-width: 1;           /* thickness in viewBox units */
+    stroke-width: 0.5;           /* thickness in viewBox units */
     stroke-linejoin: round;    /* smoother corners */
     stroke-linecap: round;
 }
