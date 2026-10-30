@@ -10,7 +10,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #0038ff;
+    background: #1e1e2f;
     color: #e0e0e0;
 }
 
@@ -18,7 +18,7 @@ body {
 .top-section {
     flex: 0 0 auto;
     padding: 2rem 1.5rem;
-    background: #2d3e50;
+    background: #0038ff;
     border-bottom: 4px solid #ffb74d;
     text-align: center;
 }
@@ -124,8 +124,17 @@ body {
   font-style: italic;
   line-height: 1.4;
 }
+
 .tab-panel p + .audio-figure {
   margin-top: 1.25rem;     /* explicit gap, replaces default p margin */
+}
+
+a {
+  color: #64b5f6;            /* unvisited */
+}
+
+a:visited {
+  color: #ba68c8;            /* already clicked */
 }
 
 /* small screen tweak */
