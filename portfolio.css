@@ -133,10 +133,6 @@ a {
   color: #64b5f6;            /* unvisited */
 }
 
-a:visited {
-  color: #ba68c8;            /* already clicked */
-}
-
 /* small screen tweak */
 @media (max-width: 600px) {
     .top-section h1 { font-size: 1.5rem; }
