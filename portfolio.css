@@ -130,7 +130,11 @@ body {
 }
 
 a {
-  color: #64b5f6;            /* unvisited */
+  color: #ffffff;            /* unvisited */
+}
+
+a:visited {
+  color: #ffffff;            /* already clicked */
 }
 
 /* small screen tweak */
