@@ -109,38 +109,46 @@ body {
 }
 
 .audio-figure {
-  margin: 1rem 0 0;
+    margin: 1rem 0 0;
 }
 
 .audio-figure .tab-audio {
-  width: 100%;
-  display: block;
+    width: 100%;
+    display: block;
 }
 
 .audio-figure figcaption {
-  margin-top: 0.5rem;
-  font-size: 0.9rem;
-  color: #8fa8bf;
-  font-style: italic;
-  line-height: 1.4;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #8fa8bf;
+    font-style: italic;
+    line-height: 1.4;
 }
 
 .tab-panel p + .audio-figure {
-  margin-top: 1.25rem;     /* explicit gap, replaces default p margin */
+    margin-top: 1.25rem;     /* explicit gap, replaces default p margin */
 }
 
 a {
-  color: #ffffff;            /* unvisited */
+    color: #ffffff;            /* unvisited */
 }
 
 a:visited {
-  color: #ffffff;            /* already clicked */
+    color: #ffffff;            /* already clicked */
 }
 
-.github   .social-icon { color: #181717; }
-.youtube   .social-icon { color: #ff0000; }
-.itch   .social-icon { color: #fa5c5c; }
-.email   .social-icon { color: #ea4335; }
+.social-icon {
+    fill: currentColor;
+    stroke: #ffffff;           /* outline color */
+    stroke-width: 1;           /* thickness in viewBox units */
+    stroke-linejoin: round;    /* smoother corners */
+    stroke-linecap: round;
+}
+
+.github   .social-icon { color: #181717; stroke: #ffffff; }
+.youtube   .social-icon { color: #ff0000; stroke: #ffffff; }
+.itch   .social-icon { color: #fa5c5c; stroke: #ffffff; }
+.email   .social-icon { color: #ea4335; stroke: #ffffff; }
 
 /* small screen tweak */
 @media (max-width: 600px) {
