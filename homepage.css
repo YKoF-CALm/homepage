@@ -111,6 +111,14 @@ body {
     opacity: 0.9;
 }
 
+a {
+  color: #ffffff;            /* unvisited */
+}
+
+a:visited {
+  color: #ffffff;            /* already clicked */
+}
+
 /* small screen adjustments */
 @media (max-width: 600px) {
     .bottom-section {
