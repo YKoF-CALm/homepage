@@ -124,6 +124,9 @@ body {
   font-style: italic;
   line-height: 1.4;
 }
+.tab-panel p + .audio-figure {
+  margin-top: 1.25rem;     /* explicit gap, replaces default p margin */
+}
 
 /* small screen tweak */
 @media (max-width: 600px) {
