@@ -108,6 +108,23 @@ body {
     color: #b0c4de;
 }
 
+.audio-figure {
+  margin: 1rem 0 0;
+}
+
+.audio-figure .tab-audio {
+  width: 100%;
+  display: block;
+}
+
+.audio-figure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #8fa8bf;
+  font-style: italic;
+  line-height: 1.4;
+}
+
 /* small screen tweak */
 @media (max-width: 600px) {
     .top-section h1 { font-size: 1.5rem; }
