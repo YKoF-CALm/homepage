@@ -16,6 +16,9 @@ function activateTab(button) {
     // Update every panel
     tabPanels.forEach(panel => {
         const isActive = panel.id === targetId;
+        if (!isActive) {
+            panel.querySelectorAll('audio').forEach(a => a.pause());
+        }
         panel.classList.toggle('active', isActive);
         panel.hidden = !isActive;
     });
