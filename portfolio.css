@@ -125,6 +125,30 @@ body {
     line-height: 1.4;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img-figure {
+    margin: 1.25rem 0 0;
+}
+
+.img-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.img-figure figcaption {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #8fa8bf;
+    font-style: italic;
+}
+
 .tab-panel p + .audio-figure {
     margin-top: 1.25rem;     /* explicit gap, replaces default p margin */
 }
