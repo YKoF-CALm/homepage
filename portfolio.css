@@ -163,16 +163,12 @@ a:visited {
 
 .social-icon {
     fill: currentColor;
-    stroke: #ffffff;           /* outline color */
-    stroke-width: 0.5;           /* thickness in viewBox units */
-    stroke-linejoin: round;    /* smoother corners */
-    stroke-linecap: round;
 }
 
-.github   .social-icon { color: #181717; stroke: #ffffff; }
-.youtube   .social-icon { color: #ff0000; stroke: #ffffff; }
-.itch   .social-icon { color: #fa5c5c; stroke: #ffffff; }
-.email   .social-icon { color: #ea4335; stroke: #ffffff; }
+.github   .social-icon { color: #181717; }
+.youtube   .social-icon { color: #ff0000; }
+.itch   .social-icon { color: #fa5c5c; }
+.email   .social-icon { color: #ea4335; }
 
 /* small screen tweak */
 @media (max-width: 600px) {
