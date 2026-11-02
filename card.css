@@ -12,13 +12,6 @@ body {
     flex-direction: column;
     background: #1e1e2f;
     color: #e0e0e0;
-    transition: background 0.2s, color 0.2s;
-}
-
-/* light theme, toggled by JS */
-body.light {
-    background: #f4f6f8;
-    color: #1e2a36;
 }
 
 /* ----- TOP SECTION ----- */
@@ -28,10 +21,6 @@ body.light {
     background: #2d3e50;
     border-bottom: 4px solid #ffb74d;
     text-align: center;
-}
-
-body.light .top-section {
-    background: #e2e8ee;
 }
 
 .top-section h1 {
@@ -44,10 +33,6 @@ body.light .top-section {
     color: #b0c4de;
 }
 
-body.light .top-section p {
-    color: #4a5c6e;
-}
-
 /* ----- BOTTOM SECTION ----- */
 .bottom-section {
     flex: 1;
@@ -58,54 +43,46 @@ body.light .top-section p {
     overflow-y: auto;
 }
 
-body.light .bottom-section {
-    background: #eef2f5;
-}
-
-.button-list-container {
+.link-list-container {
     width: 100%;
     max-width: 520px;
 }
 
-.button-list-container h2 {
+.link-list-container h2 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
     color: #f0f0f0;
 }
 
-body.light .button-list-container h2 {
-    color: #1e2a36;
-}
-
-/* ----- BUTTON LIST ----- */
-.button-list {
+/* ----- LINK LIST ----- */
+.link-list {
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
 }
 
-/* ----- BUTTONS ----- */
+/* ----- BUTTON-STYLED LINKS ----- */
 .btn {
-    width: 100%;
-    display: inline-flex;
+    display: flex;                    /* block-level link, fills the li */
     align-items: center;
     gap: 0.6rem;
+    width: 100%;
     padding: 0.8rem 1.1rem;
-    font: inherit;
     font-size: 1rem;
     text-align: left;
     color: #e0e0e0;
     background: #162633;
     border: 1px solid #2d3e50;
     border-radius: 8px;
-    cursor: pointer;
+    text-decoration: none;            /* remove default underline */
     transition: background 0.15s, border-color 0.15s, transform 0.05s;
 }
 
 .btn:hover {
     background: #1a2f3f;
     border-color: #ffb74d;
+    color: #ffffff;                   /* brighten on hover */
 }
 
 .btn:active {
@@ -128,6 +105,7 @@ body.light .button-list-container h2 {
 .btn-primary:hover {
     background: #ffa726;
     border-color: #ffa726;
+    color: #2d3e50;                   /* keep dark text on orange */
 }
 
 .btn-danger {
@@ -138,39 +116,11 @@ body.light .button-list-container h2 {
 .btn-danger:hover {
     background: #3a1f1f;
     border-color: #ff8a80;
+    color: #ff8a80;
 }
 
-/* light theme buttons */
-body.light .btn {
-    color: #1e2a36;
-    background: #ffffff;
-    border-color: #cfd8e0;
-}
-
-body.light .btn:hover {
-    background: #f7f9fb;
-    border-color: #ffb74d;
-}
-
-body.light .btn-primary {
-    color: #ffffff;
-    background: #f57c00;
-    border-color: #f57c00;
-}
-
-body.light .btn-danger {
-    color: #c62828;
-    border-color: #c62828;
-}
-
-/* ----- STATUS LINE ----- */
-.status {
-    margin-top: 1.25rem;
-    font-size: 0.9rem;
-    color: #8fa8bf;
-    font-style: italic;
-}
-
-body.light .status {
-    color: #6b7f8f;
+/* small screen tweak */
+@media (max-width: 600px) {
+    .top-section h1 { font-size: 1.5rem; }
+    .btn { padding: 0.7rem 0.9rem; font-size: 0.95rem; }
 }

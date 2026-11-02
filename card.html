@@ -3,53 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button List</title>
+    <title>Link List</title>
     <link rel="stylesheet" href="card.css">
 </head>
 <body>
 
     <header class="top-section">
-        <h1>⚡ Button List</h1>
-        <p>Click any button below</p>
+        <h1>⚡ Link List</h1>
+        <p>Click any link below</p>
     </header>
 
     <div class="bottom-section">
-        <div class="button-list-container">
-            <h2>Actions</h2>
+        <div class="link-list-container">
+            <h2>Pages &amp; files</h2>
 
-            <ul class="button-list">
+            <ul class="link-list">
                 <li>
-                    <button class="btn btn-primary" type="button" data-action="greet">
-                        👋 Say hello
-                    </button>
+                    <a class="btn btn-primary" href="index.html">🏠 Home</a>
                 </li>
                 <li>
-                    <button class="btn" type="button" data-action="download">
-                        📄 Download résumé
-                    </button>
+                    <a class="btn" href="page2.html">📄 Page 2</a>
                 </li>
                 <li>
-                    <button class="btn" type="button" data-action="toggle">
-                        🌗 Toggle theme
-                    </button>
+                    <a class="btn" href="files/resume.pdf" download>⬇️ Download résumé (PDF)</a>
                 </li>
                 <li>
-                    <button class="btn" type="button" data-action="copy">
-                        📋 Copy link
-                    </button>
+                    <a class="btn" href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">🐙 GitHub profile</a>
                 </li>
                 <li>
-                    <button class="btn btn-danger" type="button" data-action="reset">
-                        ♻️ Reset
-                    </button>
+                    <a class="btn btn-danger" href="mailto:you@example.com">✉️ Email me</a>
                 </li>
             </ul>
 
-            <p class="status" id="status" aria-live="polite">No action yet.</p>
         </div>
-    </div>
-
-    <script src="card.js" defer></script>
+  </div>
 
 </body>
 </html>
