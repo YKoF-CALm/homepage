@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button List</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+
+    <header class="top-section">
+        <h1>⚡ Button List</h1>
+        <p>Click any button below</p>
+    </header>
+
+    <div class="bottom-section">
+        <div class="button-list-container">
+            <h2>Actions</h2>
+
+            <ul class="button-list">
+                <li>
+                    <button class="btn btn-primary" type="button" data-action="greet">
+                        👋 Say hello
+                    </button>
+                </li>
+                <li>
+                    <button class="btn" type="button" data-action="download">
+                        📄 Download résumé
+                    </button>
+                </li>
+                <li>
+                    <button class="btn" type="button" data-action="toggle">
+                        🌗 Toggle theme
+                    </button>
+                </li>
+                <li>
+                    <button class="btn" type="button" data-action="copy">
+                        📋 Copy link
+                    </button>
+                </li>
+                <li>
+                    <button class="btn btn-danger" type="button" data-action="reset">
+                        ♻️ Reset
+                    </button>
+                </li>
+            </ul>
+
+            <p class="status" id="status" aria-live="polite">No action yet.</p>
+        </div>
+    </div>
+
+    <script src="card.js" defer></script>
+
+</body>
+</html>

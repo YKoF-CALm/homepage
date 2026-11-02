@@ -1,0 +1,176 @@
+/* reset & base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, 'Segoe UI', Roboto, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #1e1e2f;
+    color: #e0e0e0;
+    transition: background 0.2s, color 0.2s;
+}
+
+/* light theme, toggled by JS */
+body.light {
+    background: #f4f6f8;
+    color: #1e2a36;
+}
+
+/* ----- TOP SECTION ----- */
+.top-section {
+    flex: 0 0 auto;
+    padding: 2rem 1.5rem;
+    background: #2d3e50;
+    border-bottom: 4px solid #ffb74d;
+    text-align: center;
+}
+
+body.light .top-section {
+    background: #e2e8ee;
+}
+
+.top-section h1 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.top-section p {
+    color: #b0c4de;
+}
+
+body.light .top-section p {
+    color: #4a5c6e;
+}
+
+/* ----- BOTTOM SECTION ----- */
+.bottom-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    background: #1e2a36;
+    overflow-y: auto;
+}
+
+body.light .bottom-section {
+    background: #eef2f5;
+}
+
+.button-list-container {
+    width: 100%;
+    max-width: 520px;
+}
+
+.button-list-container h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #f0f0f0;
+}
+
+body.light .button-list-container h2 {
+    color: #1e2a36;
+}
+
+/* ----- BUTTON LIST ----- */
+.button-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+/* ----- BUTTONS ----- */
+.btn {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.8rem 1.1rem;
+    font: inherit;
+    font-size: 1rem;
+    text-align: left;
+    color: #e0e0e0;
+    background: #162633;
+    border: 1px solid #2d3e50;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, transform 0.05s;
+}
+
+.btn:hover {
+    background: #1a2f3f;
+    border-color: #ffb74d;
+}
+
+.btn:active {
+    transform: scale(0.99);
+}
+
+.btn:focus-visible {
+    outline: 2px solid #ffb74d;
+    outline-offset: 2px;
+}
+
+/* variants */
+.btn-primary {
+    color: #2d3e50;
+    background: #ffb74d;
+    border-color: #ffb74d;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background: #ffa726;
+    border-color: #ffa726;
+}
+
+.btn-danger {
+    color: #ff8a80;
+    border-color: #ff8a80;
+}
+
+.btn-danger:hover {
+    background: #3a1f1f;
+    border-color: #ff8a80;
+}
+
+/* light theme buttons */
+body.light .btn {
+    color: #1e2a36;
+    background: #ffffff;
+    border-color: #cfd8e0;
+}
+
+body.light .btn:hover {
+    background: #f7f9fb;
+    border-color: #ffb74d;
+}
+
+body.light .btn-primary {
+    color: #ffffff;
+    background: #f57c00;
+    border-color: #f57c00;
+}
+
+body.light .btn-danger {
+    color: #c62828;
+    border-color: #c62828;
+}
+
+/* ----- STATUS LINE ----- */
+.status {
+    margin-top: 1.25rem;
+    font-size: 0.9rem;
+    color: #8fa8bf;
+    font-style: italic;
+}
+
+body.light .status {
+    color: #6b7f8f;
+}
