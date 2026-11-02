@@ -110,16 +110,7 @@ a:visited {
 
 .social-icon .btn {
     fill: currentColor;
-    stroke: #ffffff;           /* outline color */
-    stroke-width: 0.5;           /* thickness in viewBox units */
-    stroke-linejoin: round;    /* smoother corners */
-    stroke-linecap: round;
 }
-
-.github .social-icon .btn { color: #181717; stroke: #ffffff; }
-.youtube .social-icon .btn { color: #ff0000; stroke: #ffffff; }
-.gamebanana .social-icon .btn { color: #FCEF40; stroke: #ffffff; }
-.discord .social-icon .btn { color: #5865F2; stroke: #ffffff; }
 
 /* small screen tweak */
 @media (max-width: 600px) {
