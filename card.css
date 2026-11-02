@@ -94,30 +94,18 @@ body {
     outline-offset: 2px;
 }
 
-/* variants */
-.btn-primary {
-    color: #2d3e50;
-    background: #ffb74d;
-    border-color: #ffb74d;
-    font-weight: 600;
+.social-icon {
+    fill: currentColor;
+    stroke: #ffffff;           /* outline color */
+    stroke-width: 0.5;           /* thickness in viewBox units */
+    stroke-linejoin: round;    /* smoother corners */
+    stroke-linecap: round;
 }
 
-.btn-primary:hover {
-    background: #ffa726;
-    border-color: #ffa726;
-    color: #2d3e50;                   /* keep dark text on orange */
-}
-
-.btn-danger {
-    color: #ff8a80;
-    border-color: #ff8a80;
-}
-
-.btn-danger:hover {
-    background: #3a1f1f;
-    border-color: #ff8a80;
-    color: #ff8a80;
-}
+.github   .social-icon { color: #181717; stroke: #ffffff; }
+.youtube   .social-icon { color: #ff0000; stroke: #ffffff; }
+.gamebanana .social-icon { color: #FCEF40; stroke: #ffffff; }
+.discord .social-icon { color: #5865F2; stroke: #ffffff; }
 
 /* small screen tweak */
 @media (max-width: 600px) {
